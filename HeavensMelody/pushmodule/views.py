@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index():
+def index(request):
     return HttpResponse('<h1>Frank Anthony</h1>')
