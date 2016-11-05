@@ -1,0 +1,27 @@
+body {
+    background-color: transparent;
+    background: url(../img/put-your-hands.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+	background-color: transparent;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 0.3em;
+    color: #fff;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+

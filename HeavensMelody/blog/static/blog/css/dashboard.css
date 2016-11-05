@@ -1,0 +1,154 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  // padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #333333;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;  
+}
+@media (min-width: 768px) {
+  .main {
+    
+  
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.main .div .img{
+  width: 200px;
+  height: 200px;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 50px;
+  text-align: center;
+  padding-bottom:50px;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.placeholder img {
+  display: inline-block;
+}
+
+.img-txt1{
+  text-align: center;
+}
+
+.page-header{
+  color: fff;
+  background-color: 000;
+}
+
+.row-placeholders{
+  border: 1px;
+}
+
+.center{
+  text-align: center;
+  margin: auto;
+}
+
+.enlarge{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.enlarge:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+// .enlarge figure:hover img: {
+//   -webkit-transform: scale(1.1);
+//   transform: scale(1.1);
+// }
+// 
+
+.link-box{
+  border:1px;
+}
+.link-box h4{
+  color:#000;
+  font-weight: bolder;
+}

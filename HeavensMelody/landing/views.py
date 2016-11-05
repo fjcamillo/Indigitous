@@ -9,6 +9,5 @@ def index(request):
 def land(request):
     return render(request, 'landing/index.html')
 
-def sign_in(request):
-    pass
-    #return(request,)
+def registerme(request):
+    return render(request, 'landing/registration.html')
