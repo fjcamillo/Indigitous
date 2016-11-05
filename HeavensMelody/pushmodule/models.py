@@ -36,9 +36,9 @@ class create(models.Model):
     username = models.CharField(max_length=30)
     description = models.TextField(max_length=250)
     lyrics = models.TextField(max_length=3000)
-    beat = models.FileField(blank=None, null=True)
+    beat = models.FileField(blank=None, null=True, default=None)
     story = models.TextField(max_length=2000)
-    photos = models.ImageField(blank=None, null=True)
+    photos = models.ImageField(blank=None, null=True, default=None)
     filter = models.IntegerField(choices=types_of_genre, default=1)
 
     def __str__(self):

@@ -2,5 +2,6 @@ from django.conf.urls import url, include
 from . import views
 
 urlpatterns = [
-    url('^', views.index),
+    url('^', views.land),
+    url('^signin', views.sign_in),
 ]
