@@ -6,3 +6,9 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse('<h1>ROMMEL REYES</h1>')
 
+def land(request):
+    return render(request, 'landing/index.html')
+
+def sign_in(request):
+    pass
+    #return(request,)
