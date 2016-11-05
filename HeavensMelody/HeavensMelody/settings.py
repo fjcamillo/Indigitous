@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'landing',
     # 'login',
     'pushmodule',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +123,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = '~/Desktop/Indigitous/landing/static/'

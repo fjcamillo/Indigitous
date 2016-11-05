@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^$', include('landing.urls')),
     url(r'^learn/', include('pushmodule.urls')),
     # url(r'^login/', include('login.urls')),
+    # url(r'^blog/', include('blog.url'))
 
 ]
