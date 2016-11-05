@@ -6,7 +6,7 @@ from pushmodule.models import create
 
 class createField(admin.ModelAdmin):
     list_display = ['id', 'title', 'time', 'username', 'short_description', 'short_lyrics',
-                   'beat', 'short_story', 'photos', 'filter']
+                   'beat', 'short_story', 'photos', 'filter_genre', 'filter_mood']
     class meta:
         model = create
 admin.site.register(create, createField)

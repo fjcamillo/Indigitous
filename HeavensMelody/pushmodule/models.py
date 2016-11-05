@@ -31,6 +31,30 @@ class create(models.Model):
         (genre_chamber_music, 'Chamber Music'),
     )
 
+    mood_joy = 1
+    mood_sad = 2
+    mood_serenity = 3
+    mood_trust = 4
+    mood_anger = 5
+    mood_disgust = 6
+    mood_boredum = 7
+    mood_surprise = 8
+    mood_fear = 9
+    mood_vigilance = 10
+
+    types_of_mood = {
+        (mood_joy, 'Joy'),
+        (mood_sad, 'Sad'),
+        (mood_serenity, 'Serenity'),
+        (mood_trust, 'Trust'),
+        (mood_anger, 'Anger'),
+        (mood_disgust, 'Disgust'),
+        (mood_boredum, 'Boredum'),
+        (mood_surprise, 'Surprise'),
+        (mood_fear, 'Fear'),
+        (mood_vigilance, 'Vigilance'),
+    }
+
     title = models.CharField(max_length=50)
     time = models.DateField(default=timezone.now)
     username = models.CharField(max_length=30)
@@ -39,7 +63,8 @@ class create(models.Model):
     beat = models.FileField(blank=None, null=True, default=None)
     story = models.TextField(max_length=2000)
     photos = models.ImageField(blank=None, null=True, default=None)
-    filter = models.IntegerField(choices=types_of_genre, default=1)
+    filter_genre = models.IntegerField(choices=types_of_genre, default=1)
+    filter_mood = models.IntegerField(choices=types_of_mood, default=1)
 
     def __str__(self):
         return self.title

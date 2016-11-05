@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^unfinished/', views.unfinished, name='unfinished'),
     url(r'^finished/', views.finished, name='finished'),
     url(r'^create/', views.create, name='create')
+
 ]
