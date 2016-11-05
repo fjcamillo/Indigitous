@@ -167,12 +167,7 @@ body, html {
 
 /* HOME PAGE */
 #homepage {
-<<<<<<< HEAD
     background: url(../img/put-your-hands.png);
-=======
-    /*background: url(../img/put-your-hands.png);*/
->>>>>>> 8f407a73305e5afee62077a588378c5de47e5238
-    /*background: url("../img/put-your-hands.png");*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
