@@ -8,8 +8,7 @@ def index(request):
     return HttpResponse('<h1>Frank Anthony</h1>')
 
 def published(request):
-    pass
-    # return render(request, '')
+    return render(request, '')
 
 def unfinished(request):
     pass
