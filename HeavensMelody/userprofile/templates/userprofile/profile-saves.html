@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Profile of "JASON SALCEDO" </title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+{#	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">#}
+    <link rel="stylesheet" type="text/css" href={% static 'pushmodule/css/bootstrap.min.css' %}>
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
 	<link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
 	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
@@ -13,13 +15,14 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-          <center><img src="img/avatar.png" style="border-radius:50%;"></center>
+{#          <center><img src="img/avatar.png" style="border-radius:50%;"></center>#}
+              <center><img style="border-radius:50%;" src={% static 'pushmodule/img/avatar.png' %} ></center>
             <center><h4>Welcome back Jason!</h4></center>
-            <li> <a href="profile-listen.html">Listen</a></li>
-            <li><a href="profile-dibs.html">My Dibs</a></li>
+            <li> <a href="/profile">Listen</a></li>
+            <li><a href="/profile/dibs">My Dibs</a></li>
             <li class="active"><a href="profile-saves.html">My Saves</a></li>
-            <li><a href="profile-social.html">Social</a></li>
-            <li><a href="profile-settings.html">Settings</a></li>
+            <li><a href="/profile/social">Social</a></li>
+            <li><a href="/profile/settings">Settings</a></li>
           </ul>
           
         </div>
@@ -84,12 +87,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Dashboard Template for Bootstrap_files/jquery.min.js.download"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./Dashboard Template for Bootstrap_files/bootstrap.min.js.download"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="./Dashboard Template for Bootstrap_files/holder.min.js.download"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.js.download"></script>
+{#    <script src="./Dashboard Template for Bootstrap_files/jquery.min.js.download"></script>#}
+{#    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>#}
+{#    <script src="./Dashboard Template for Bootstrap_files/bootstrap.min.js.download"></script>#}
+{#    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->#}
+{#    <script src="./Dashboard Template for Bootstrap_files/holder.min.js.download"></script>#}
+{#    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->#}
+{#    <script src="./Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.js.download"></script>#}
+
+{% include 'landing/lower_js.html' %}
+
 </body>
 </html>

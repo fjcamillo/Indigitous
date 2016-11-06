@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -16,14 +17,14 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+{#    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">#}
+{#    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">#}
+{##}
+{#    <!-- Stylesheet -->#}
+{#    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">#}
+{#    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">#}
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-
-  
+  {% include 'landing/css_codes.html' %}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,13 +45,13 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html" class="pull-left"><img class="image-responsive" src="img/logo.png" width="300px" height="82px"></a>
+              <a class="navbar-brand" href="/" class="pull-left"><img class="image-responsive" src="img/logo.png" width="300px" height="82px"></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav shift navbar-nav navbar-right reveal-nav">
                   <li><a href="home.html" class="page-scroll up" data-hover="Home">Home</a></li>
-                  <li><a href="profile-listen.html" class="page-scroll up" data-hover="Profile">Profile</a></li>
+                  <li><a href="/profile" class="page-scroll up" data-hover="Profile">Profile</a></li>
                   <li class="dropdown">
                       <a href="#" data-toggle="dropdown" class="page-scroll dropdown-toggl up" data-hover="Dibs">Dibs &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                       <ul class="dropdown-menu">
@@ -58,9 +59,9 @@
                         <li><a href="push-create.html">Create</a></li>
                       </ul>
                   </li>
-                  <li><a href="blog.html" class="page-scroll up" data-hover="Blog">Blog</a></li>
+                  <li><a href="/blog" class="page-scroll up" data-hover="Blog">Blog</a></li>
                   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                  <li><a href="index.html" class="page-scroll up" data-hover="Log In">Log In</a></li>
+                  <li><a href="/" class="page-scroll up" data-hover="Log In">Log In</a></li>
               </ul>
           </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -85,10 +86,10 @@
           
             <div class="row">
                 <div class="col-sm-5">
-                    <img src="img/put-your-hands.png" class="img-responsive" />
+                    <img class="img-responsive" src={% static 'pushmodule/img/put-your-hands.png' %}  />
                 </div>
                 <div class="col-sm-7">
-                  <h3 class="till">Things You Owe Me</h4>
+                  <h3 class="till">Things You Owe Me</h3>
                   <h4 class="till">Janina Swarovski</h4>  
                   <hr class="post" /> 
                   <p class="till">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -137,17 +138,19 @@
       </div>
   </nav>
 
- 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-	    <script type="text/javascript" src="js/bootstrap.js"></script>
-	    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-      <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-      <script type="text/javascript" src="js/jquery-filestyle.js"></script>
+{# 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->#}
+{#	    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>#}
+{#	    <script type="text/javascript" src="js/bootstrap.js"></script>#}
+{#	    <script type="text/javascript" src="js/modernizr.custom.js"></script>#}
+{#      <script type="text/javascript" src="js/jquery.bxslider.js"></script>#}
+{#      <script type="text/javascript" src="js/jquery-filestyle.js"></script>#}
+{##}
+{##}
+{##}
+{#    <!-- Custom Javascripts ================================================== -->#}
+{#    	<script type="text/javascript" src="js/main.js"></script>#}
 
-
-
-    <!-- Custom Javascripts ================================================== -->
-    	<script type="text/javascript" src="js/main.js"></script>
+{% include 'landing/lower_js.html' %}
 
 </body>
 </html>

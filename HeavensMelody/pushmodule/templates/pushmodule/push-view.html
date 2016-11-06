@@ -17,14 +17,14 @@
 {#    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">#}
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+{#    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">#}
+{#    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">#}
+{##}
+{#    <!-- Stylesheet -->#}
+{#    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">#}
+{#    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">#}
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-
-{#    {% include 'landing/css_codes.html' %}#}
+    {% include 'landing/css_codes.html' %}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,14 +45,14 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/" class="pull-left"><img class="image-responsive" src= {% static 'pushmodule/img/logo.png' %}
-                      width=300px height="82px"></a>
+              <a class="navbar-brand" href="/" class="pull-left"><img class="image-responsive" width=300px height="82px" src={% static 'pushmodule/img/logo.png' %}
+                      ></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav shift navbar-nav navbar-right reveal-nav">
                   <li><a href="/" class="page-scroll up" data-hover="Home">Home</a></li>
-                  <li><a href="profile-listen.html" class="page-scroll up" data-hover="Profile">Profile</a></li>
+                  <li><a href="/user" class="page-scroll up" data-hover="Profile">Profile</a></li>
                   <li class="dropdown">
                       <a href="#" data-toggle="dropdown" class="page-scroll dropdown-toggl up" data-hover="Dibs">Dibs &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                       <ul class="dropdown-menu">
@@ -100,7 +100,7 @@
                       <h3 class="til">The Remembered One</h3>
                       <h4 class="til">Albert Dung</h4>
                       <p class="til">Lorem ipsum dolor sit amet, sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad miniveniam.</p>
-                      <span class="c"><a href="push-view-indi.html">See More...</a></span>
+                      <span class="c"><a href="/learn/finished">See More...</a></span>
                     </div>
 
                     <div class="card">
@@ -168,7 +168,7 @@
                       <h4 class="til">Janina Swarovski</h4>
                       <p class="til">Lorem ipsum dolor sit amet, sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad miniveniam.
                       </p>
-                      <span class="c"><a href="push-view-indi2.html">See More...</a></span>
+                      <span class="c"><a href="/learn/published">See More...</a></span>
                     </div>
 
                     <div class="card">

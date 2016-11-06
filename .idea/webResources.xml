@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebResourcesPaths">
+    <contentEntries>
+      <entry url="file://$PROJECT_DIR$">
+        <entryData>
+          <resourceRoots>
+            <path value="file://$PROJECT_DIR$/HeavensMelody/pushmodule/static" />
+            <path value="file://$PROJECT_DIR$/HeavensMelody/landing/static" />
+            <path value="file://$PROJECT_DIR$/HeavensMelody/landing/static/landing" />
+            <path value="file://$PROJECT_DIR$/HeavensMelody/userprofile/static" />
+          </resourceRoots>
+        </entryData>
+      </entry>
+    </contentEntries>
+  </component>
+</project>
